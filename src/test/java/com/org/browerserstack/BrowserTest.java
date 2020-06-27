@@ -25,8 +25,8 @@ public class BrowserTest
 		System.out.println("we are running in AWS>jenkins>browserstack");
 	
 		    DesiredCapabilities caps = new DesiredCapabilities();
-		    caps.setCapability("browserName", "MS-Edge");
-		    caps.setCapability("browser_version", "44");
+		    caps.setCapability("browser", "Safari");
+			caps.setCapability("browser_version", "5.1");
 		  //  caps.setCapability("device", "iPhone 8 Plus");
 		    caps.setCapability("realMobile", "true");
 		    caps.setCapability("os_version", "11");
@@ -50,6 +50,8 @@ public class BrowserTest
 
 		    System.out.println(driver.getTitle());
 		    driver.quit();
+		    
+		    System.out.println("end the browserstack");
 	  }
 	}
 
