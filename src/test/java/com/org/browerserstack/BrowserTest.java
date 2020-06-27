@@ -22,9 +22,10 @@ public class BrowserTest
 	@Test
 	public void start() throws MalformedURLException
 	{
+		System.out.println("we are running in AWS>jenkins>browserstack");
 	
 		    DesiredCapabilities caps = new DesiredCapabilities();
-		    caps.setCapability("browserName", "chrome");
+		    caps.setCapability("browserName", "firefox");
 		    caps.setCapability("browser_version", "83");
 		  //  caps.setCapability("device", "iPhone 8 Plus");
 		    caps.setCapability("realMobile", "true");
